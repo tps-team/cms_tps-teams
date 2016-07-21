@@ -1,0 +1,22 @@
+/* 
+    Author     : vlad
+*/
+#USERTOCKEN a {
+    color: greenyellow;
+    font-size: 24px;
+}
+
+.news_strange{
+    padding-left: 20px;
+}
+
+/*#HELLO{
+    padding-left: 300px;
+    padding-right: 300px;
+}*/
+
+#HELLO pre{
+    color: red;
+    text-align: center;
+    
+}
