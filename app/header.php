@@ -58,8 +58,22 @@
                         <?php else : ?>
 
                         <?php foreach ($categories as $category) :?>
-                        <li><a href="app/categories.php?id=<?=$category["cat_id"]?>"><?=$category["title"] ?></a></li>
-                            
+                            <?php if ($category["cat_id"] == about):?>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$category["title"]?><b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Действие</a></li>
+                                      <li><a href="#">Другое действие</a></li>
+                                      <li><a href="#">Что-то еще здесь</a></li>
+                                      <li class="divider"></li>
+                                      <li class="dropdown-header">Заголовок сча</li>
+                                      <li><a href="#">Разделенные ссылке</a></li>
+                                      <li><a href="#">Еще один отделенный ссылке</a></li>
+                                    </ul>
+                                  </li>
+                            <?php else:?>
+                                <li><a href="app/categories.php?id=<?=$category["cat_id"]?>"><?=$category["title"] ?></a></li>
+                            <?php endif;?>
                         <?php endforeach; ?>
                         <?php endif;?>
                     </ul>
@@ -85,8 +99,3 @@
             </div>
         </div>
         
-<div id="HELLO">
-<pre id="hello">
-Внимание всем на сайте проводятся технические работы 
-возможна нестабильная работа сайта</pre>
-</div>
