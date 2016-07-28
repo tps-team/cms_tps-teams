@@ -73,7 +73,7 @@
                                     </ul>
                                   </li>
                             <?php else:?>
-                                <li><a href="app/categories.php?id=<?=$category["cat_id"]?>"><?=$category["title"] ?></a></li>
+                                  <li><a href="categories.php?id=<?=$category["cat_id"]?>"><?=$category["title"] ?></a></li>
                             <?php endif;?>
                         <?php endforeach; ?>
                         <?php endif;?>
