@@ -62,13 +62,14 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$category["title"]?><b class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                      <li><a href="#">Действие</a></li>
-                                      <li><a href="#">Другое действие</a></li>
-                                      <li><a href="#">Что-то еще здесь</a></li>
+                                      <li class="dropdown-header">Два весёлых инженера</li>
+                                      <li><a href="#">MrSteel</a></li>
+                                      <li><a href="#">Danila29</a></li>                                      
                                       <li class="divider"></li>
-                                      <li class="dropdown-header">Заголовок сча</li>
-                                      <li><a href="#">Разделенные ссылке</a></li>
-                                      <li><a href="#">Еще один отделенный ссылке</a></li>
+                                      <li class="dropdown-header">TPS-Team</li>
+                                      <li><a href="#">MrSteel</a></li>
+                                      <li><a href="#">Danila29</a></li>
+                                      <li><a href="#">Glebskiy61</a></li>
                                     </ul>
                                   </li>
                             <?php else:?>
