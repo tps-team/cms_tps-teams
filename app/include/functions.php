@@ -12,19 +12,6 @@ function add_to_db($link, $add_to_db){
     mysqli_query($link, $sql);    
 }
 
-function login($link){
-    $sql = "SELECT * FROM `users`";
-    $result = mysqli_query($link, $sql); 
-    $userlist = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    return $userlist;
-}
-
-function get_DB_list_users($link){
-            $userlist = login($link);
-            foreach ($userlist as $users){}
-            return $users;
-}
-
 function get_news($link) {
     $sql = "SELECT * FROM `news`";
     $result = mysqli_query($link, $sql); 
@@ -32,4 +19,10 @@ function get_news($link) {
     return $news;
 }
 
+function get_instruction($link){
+    $sql = "SELECT * FROM `instructions`";
+    $result = mysqli_query($link, $sql);
+    $instuctions = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $instuctions;
+}
 

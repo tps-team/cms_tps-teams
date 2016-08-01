@@ -1,26 +1,6 @@
 <?php
-    
-        
-        $errors_array = array();
         require_once 'app/include/database.php';
-        require_once 'app/include/functions.php'; 
-        $db_result = get_DB_list_users($link);
-        
-        $logined = 0;
-        
-        /*
-        if($db_result["nick"] == $_POST["nick"]){
-            if($db_result["password"] == md5($_POST["password"])){
-                $logined = 1;
-                $nick = $_POST["nick"];
-            }  else {
-                $errors_array["pass"] = "pass denited";
-            }            
-        } else {
-            $errors_array["nick"] = "nick wronged";
-        }
-        */
-        
+        require_once 'app/include/functions.php';                
     ?>
     <!DOCTYPE html>
     <html lang="ru">
