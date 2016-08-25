@@ -26,3 +26,14 @@ function get_instruction($link){
     return $instuctions;
 }
 
+function upload($link, $uploadname, $uploadtype, $uploaddesc){
+    $sql = "INSERT INTO `my_first_blog`.`picks``storage` (`id`, `filename`, `mimetype`, `description`) VALUES (NULL, \'.$uploadname\', \'$uploadtype\', \'$uploaddesc\', $uploaddata);";
+    mysqli_query($link, $sql);
+}
+
+function get_streams_notifise($link){
+    $sql = "SELECT * FROM `streams`";
+    $result = mysqli_query($link, $sql);
+    $i = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $i;
+}
